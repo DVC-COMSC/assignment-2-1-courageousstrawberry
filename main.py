@@ -21,13 +21,13 @@ def main():
     total = f + m
 
     #Find the percentage of female and male students
-    f_perc = (float(f)/total)
-    m_perc = (float(m)/total)
+    f_perc = (float(f)/total) * 100
+    m_perc = (float(m)/total) * 100
 
     #Print all the values
     print(f'\nThe total number of students: \t {total}')
     print(f'The number of males and females: \t {m} \t {f}')
-    print(f'The percentage of males and females: \t {m_perc:.2%} \t {f_perc:.2%}')
+    print(f'The percentage of males and females: \t {m_perc:.2f}% \t {f_perc:.2f}%')
 
     return m_perc, f_perc
 
